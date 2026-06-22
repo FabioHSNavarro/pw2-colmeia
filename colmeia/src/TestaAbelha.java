@@ -6,6 +6,8 @@ public class TestaAbelha {
         abelha1.funcao = "Coletar Nectar";
         abelha1.horaDeVoo = 3;
         abelha1.exibir();
+        abelha1.defenderColmeia();
+        abelha1.coletarRecursos();
         System.out.println("---------------------");
 
         AbelhaZangao abelha2 = new AbelhaZangao();
@@ -14,6 +16,7 @@ public class TestaAbelha {
         abelha2.funcao = "Processo Reprodutivo";
         abelha2.quantidadeDeVoo = 4;
         abelha2.exibir();
+        abelha2.defenderColmeia();
         System.out.println("---------------------");
 
         AbelhaRainha abelha3 = new AbelhaRainha();
@@ -22,6 +25,7 @@ public class TestaAbelha {
         abelha3.funcao = "Reproducao da colonia";
         abelha3.quantidadeDeOvos = 100;
         abelha3.exibir();
+        abelha3.semCapacidades();
         System.out.println("---------------------");
 
         double consumoTotalDia = abelha1.consumoTotal() + abelha2.consumoTotal() + abelha3.consumoTotal();

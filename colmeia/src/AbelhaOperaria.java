@@ -1,4 +1,4 @@
-public class AbelhaOperaria extends Abelha{
+public class AbelhaOperaria extends Abelha implements ColetarRecursos, DefenderColmeia{
     int horaDeVoo;
 
     public AbelhaOperaria(){
@@ -13,5 +13,16 @@ public class AbelhaOperaria extends Abelha{
     public void exibir() {
         super.exibir();
         System.out.println("Horas de voo: " + horaDeVoo);
+
+    }
+    @Override
+    public void coletarRecursos(){
+        System.out.println(nome + ":");
+        System.out.println("Coletando Recursos");
+    }
+    @Override
+    public void defenderColmeia(){
+        System.out.println(nome + ":");
+        System.out.println("Defendendo colmeia");
     }
 }

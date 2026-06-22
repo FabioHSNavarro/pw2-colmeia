@@ -1,4 +1,4 @@
-public class AbelhaRainha extends Abelha{
+public class AbelhaRainha extends Abelha implements SemCapacidades{
     int quantidadeDeOvos;
 
     public AbelhaRainha(){
@@ -13,5 +13,10 @@ public class AbelhaRainha extends Abelha{
     public void exibir() {
         super.exibir();
         System.out.println("Quantidade de ovos: " + quantidadeDeOvos);
+    }
+    @Override
+    public void semCapacidades(){
+        System.out.println(nome + ":");
+        System.out.println("Nao possui capacidades especiais");
     }
 }
